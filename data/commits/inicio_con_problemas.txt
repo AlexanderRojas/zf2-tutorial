@@ -1,0 +1,3 @@
+Se instaló squeleton, se acualizó composer, pero sale un error.
+Fatal error. Clase Zend\Stdlib\Parameters contiene 5 metodos abstractos y por lo tanto debe declararse abstract o implementar los otros métodos.
+

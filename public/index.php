@@ -19,9 +19,9 @@ use Zend\Stdlib\ArrayUtils;
  * This makes our life easier when dealing with paths. Everything is relative
  * to the application root now.
  */
-echo getcwd() . "\n";
+//echo getcwd() . "\n";
 chdir(dirname(__DIR__));
-echo getcwd() . "\n";
+//echo getcwd() . "\n";
 /**
  * __DIR__ : Constante mágica (se devuelven durante la compilación y cambia según dónde se empleen)
  * Directorio del fichero. Si se utiliza dentro de un include, devolverá el directorio del fichero incluido.

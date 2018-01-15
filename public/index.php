@@ -3,18 +3,20 @@
 use Zend\Mvc\Application;
 use Zend\Stdlib\ArrayUtils;
 
+error_reporting(E_ALL);
+     ini_set("display_errors", 1);
 /**
  * when using Apache. Si pongo la variable APPLICATION_ENV = "development"
  * Entonces ponga a PHP  mostrar TODOS los errores.
  * Display all errors when APPLICATION_ENV is development.
  * you can use the APPLICATION_ENV setting in your VirtualHost to let PHP
  * output all its errors to the browser. This can be useful during the development of your application.
- */
+ 
  if ($_SERVER['APPLICATION_ENV'] == 'development') {
      error_reporting(E_ALL);
      ini_set("display_errors", 1);
      } // Ya la configuré en vhost Apache
-
+*/
 /**
  * This makes our life easier when dealing with paths. Everything is relative
  * to the application root now.

@@ -20,6 +20,10 @@ use Zend\Mvc\Application;
             break;
         case Application::ERROR_ROUTER_NO_MATCH:
             $reasonMessage = 'The requested URL could not be matched by routing.';
+            /**
+             * Hasta aquí llega el sistema cuando hago una solicitud /Album/index que me arroja 
+             * un 404. Cómo llega hasta aquí?
+             */
             break;
         default:
             $reasonMessage = 'We cannot determine at this time why a 404 was generated.';

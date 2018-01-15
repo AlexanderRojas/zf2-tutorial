@@ -19,14 +19,19 @@
     },
     "autoload": {
         "psr-4": {
-            "Application\\": "module/Application/src/"
+            "Application\\": "module/Application/src/",
+            "Album\\": "module/Album/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "ApplicationTest\\": "module/Application/test/"
+       
         }
     },
+
+   
+
     "extra": [],
     "scripts": {
         "cs-check": "phpcs",

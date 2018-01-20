@@ -5,6 +5,7 @@ namespace Album\Controller;
 use Album\Model\AlbumTable;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Zend\View\Model\JsonModel;
 
 class AlbumController extends AbstractActionController
 {
@@ -33,5 +34,19 @@ class AlbumController extends AbstractActionController
 
     public function deleteAction()
     {
+    }
+
+    public function getJsonAction()
+    {
+        return new JsonModel([
+            'status' => 'SUCCESS',
+            'message'=>'Here is your data',
+            'data' => [
+                'full_name' => 'John Doe',
+                'address' => '51 Middle st.'
+            ]
+        ]);
+      
+
     }
 }
